@@ -10,7 +10,9 @@ import javax.persistence.Id;
 @Entity
 class StationData {
 
-	private @Id @GeneratedValue Long id;
+	@Id 
+	@GeneratedValue 
+	private Long id;
 	private String stationId;
 	private String name;
 	private boolean hdEnabled;
@@ -46,5 +48,13 @@ class StationData {
 
 	public void setCallSign(String callSign) {
 		this.callSign = callSign;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
 	}
 }

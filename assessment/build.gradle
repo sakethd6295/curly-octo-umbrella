@@ -36,6 +36,8 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-data-rest')
 	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.flywaydb:flyway-core:4.0')
+	compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
 	runtime('com.h2database:h2')
 	compileOnly('org.projectlombok:lombok')
 	testCompile('org.springframework.boot:spring-boot-starter-test')

@@ -17,6 +17,13 @@ class StationData {
 	private String name;
 	private boolean hdEnabled;
 	private String callSign;
+	
+	StationData(String stationId, String name, boolean hdEnabled, String callSign) {
+		this.stationId = stationId;
+		this.name = name;
+		this.hdEnabled = hdEnabled;
+		this.callSign = callSign;	
+	}
 
 	public String getStationId() {
 		return stationId;
